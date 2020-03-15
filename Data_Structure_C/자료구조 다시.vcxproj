@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{38E8C994-51A9-4EF5-9806-68279E41CEC0}</ProjectGuid>
+    <RootNamespace>자료구조다시</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="2ALGraph.cpp" />
+    <ClCompile Include="2ALGraphKruskal.cpp" />
+    <ClCompile Include="2ALGraphMain.cpp" />
+    <ClCompile Include="2ArrayBaseCircularQueue.cpp" />
+    <ClCompile Include="2ArrayBaseStack.cpp" />
+    <ClCompile Include="2ArrayBaseStackMain.cpp" />
+    <ClCompile Include="2ArrayList.cpp" />
+    <ClCompile Include="2ArrayListp99.cpp" />
+    <ClCompile Include="2AVLRebalance.cpp" />
+    <ClCompile Include="2BFSGraphMain.cpp" />
+    <ClCompile Include="2BinarySearchRecur.cpp" />
+    <ClCompile Include="2BinarySearchTreeDelMain.cpp" />
+    <ClCompile Include="2BinarySearchTreeMain.cpp" />
+    <ClCompile Include="2BinaryTree.cpp" />
+    <ClCompile Include="2BSTSearchTree.cpp" />
+    <ClCompile Include="2BubbleSort.cpp" />
+    <ClCompile Include="2Calculator.cpp" />
+    <ClCompile Include="2ChainedTableMain.cpp" />
+    <ClCompile Include="2CLinkedList.cpp" />
+    <ClCompile Include="2CLinkedListMain.cpp" />
+    <ClCompile Include="2DBLinkedList.cpp" />
+    <ClCompile Include="2DBLinkedListMain.cpp" />
+    <ClCompile Include="2Deque.cpp" />
+    <ClCompile Include="2DequeMain.cpp" />
+    <ClCompile Include="2DFSGraph.cpp" />
+    <ClCompile Include="2DFSGraphMain.cpp" />
+    <ClCompile Include="2DLinkedList.cpp" />
+    <ClCompile Include="2DLinkedListMain.cpp" />
+    <ClCompile Include="2ExpressionTree.cpp" />
+    <ClCompile Include="2FibonacciFunc.cpp" />
+    <ClCompile Include="2HanoiTower.cpp" />
+    <ClCompile Include="2HeapSort.cpp" />
+    <ClCompile Include="2InfixCalculator.cpp" />
+    <ClCompile Include="2InfixtoPostfix.cpp" />
+    <ClCompile Include="2InfixtoPostfixMain.cpp" />
+    <ClCompile Include="2InsertionSort.cpp" />
+    <ClCompile Include="2KruskalMain.cpp" />
+    <ClCompile Include="2LinearSearch.cpp" />
+    <ClCompile Include="2BinarySearch.cpp" />
+    <ClCompile Include="2ListBaseQueue.cpp" />
+    <ClCompile Include="2ListBaseQueueMain.cpp" />
+    <ClCompile Include="2ListBaseStack.cpp" />
+    <ClCompile Include="2ListBaseStackMain.cpp" />
+    <ClCompile Include="2ListMain.cpp" />
+    <ClCompile Include="2NameCardMainp99.cpp" />
+    <ClCompile Include="2Namecardp99.cpp" />
+    <ClCompile Include="2Person.cpp" />
+    <ClCompile Include="2PriorityQueue.cpp" />
+    <ClCompile Include="2QuickSort.cpp" />
+    <ClCompile Include="2RadixSort.cpp" />
+    <ClCompile Include="2SelectionSort.cpp" />
+    <ClCompile Include="2SimpleHashMain.cpp" />
+    <ClCompile Include="2SimpleHealMain.cpp" />
+    <ClCompile Include="2SimpleHeap.cpp" />
+    <ClCompile Include="2Table.cpp" />
+    <ClCompile Include="2UndefstandTable.cpp" />
+    <ClCompile Include="2UsefulHeap.cpp" />
+    <ClCompile Include="2UsefulHeapMain.cpp" />
+    <ClCompile Include="2BFSGraph.cpp" />
+    <ClCompile Include="2CircularQueueMain.cpp" />
+    <ClCompile Include="2HamburgetOrder.cpp" />
+    <ClCompile Include="2MergeSort.cpp" />
+    <ClCompile Include="2InterpolSearch.cpp" />
+    <ClCompile Include="연습장.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="2ALGraph.h" />
+    <ClInclude Include="2ALGraphKruskal.h" />
+    <ClInclude Include="2ArrayBaseCircularQueue.h" />
+    <ClInclude Include="2ArrayList.h" />
+    <ClInclude Include="2ArrayListp99.h" />
+    <ClInclude Include="2BFSGraph.h" />
+    <ClInclude Include="2BinarySearchTree.h" />
+    <ClInclude Include="2BinaryTree.h" />
+    <ClInclude Include="2CLinkedList.h" />
+    <ClInclude Include="2DBLinkedList.h" />
+    <ClInclude Include="2DLinkedList.h" />
+    <ClInclude Include="2ExpressionTree.h" />
+    <ClInclude Include="2InfixCalculator.h" />
+    <ClInclude Include="2InfixtoPostfix.h" />
+    <ClInclude Include="2ListBaseQueue.h" />
+    <ClInclude Include="2NameCardp99.h" />
+    <ClInclude Include="2ArrayBaseStack.h" />
+    <ClInclude Include="2ListBaseStack.h" />
+    <ClInclude Include="2Deque.h" />
+    <ClInclude Include="2Person.h" />
+    <ClInclude Include="2PriorityQueue.h" />
+    <ClInclude Include="2SimpleHeap.h" />
+    <ClInclude Include="2Slot.h" />
+    <ClInclude Include="2Table.h" />
+    <ClInclude Include="2UsefulHeap.h" />
+    <ClInclude Include="2AVLRebalance.h" />
+    <ClInclude Include="2DFSGraph.h" />
+    <ClInclude Include="ALEdge.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
